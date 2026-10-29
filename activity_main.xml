@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvNaglowek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0860F5"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Planer treningów"
+            android:textColor="#FFFFFF"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivSportowiec"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:contentDescription="Sportowiec"
+            android:scaleType="fitXY"
+            android:src="@drawable/sportowiec" />
+
+        <Button
+            android:id="@+id/btnLosuj"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="#0860F5"
+            android:stateListAnimator="@null"
+            android:text="LOSUJ ĆWICZENIE"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivCwiczenie"
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="12dp"
+            android:background="#F0F5FD"
+            android:contentDescription="Aktualne ćwiczenie"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cwiczenie0" />
+
+        <TextView
+            android:id="@+id/tvNazwaCwiczenia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="2dp"
+            android:text="Losuj ćwiczenie"
+            android:textColor="#101828"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMinus"
+                android:layout_width="64dp"
+                android:layout_height="49dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="#BFCCDF"
+                android:contentDescription="Zmniejsz liczbę serii"
+                android:minWidth="0dp"
+                android:stateListAnimator="@null"
+                android:text="−"
+                android:textColor="#101828"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvLicznikSerii"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="Liczba wykonanych serii"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#101828"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnPlus"
+                android:layout_width="64dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="30dp"
+                android:backgroundTint="#BFCCDF"
+                android:contentDescription="Zwiększ liczbę serii"
+                android:minWidth="0dp"
+                android:stateListAnimator="@null"
+                android:text="+"
+                android:textColor="#101828"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <Button
+                android:id="@+id/btnNastepne"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00A85A"
+                android:stateListAnimator="@null"
+                android:text="NASTĘPNE\nĆWICZENIE"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="#F51F2B"
+                android:stateListAnimator="@null"
+                android:text="RESET"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLacznaLiczbaSerii"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="12dp"
+            android:background="#E5EDF9"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Łączna liczba serii: 0"
+            android:textColor="#101828"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
